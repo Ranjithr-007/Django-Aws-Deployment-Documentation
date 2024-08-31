@@ -58,3 +58,8 @@ Deploying make sure you have done the following things.
 
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Local Site is our project Localy running destination so we have to upload whole files to Remote Site.
 
+## _4. Server Dependencies installation_
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Open Putty Configuration and select SSH, Auth Select the .ppk file, then select Session add  Hostname ``` ubuntu@Publc DNS ```  , Create new session save the session and open.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Make sure  ``` ls ``` to list the directory.
