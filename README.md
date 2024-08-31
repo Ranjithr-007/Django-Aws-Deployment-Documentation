@@ -36,3 +36,14 @@ Deploying make sure you have done the following things.
     ```bash
     pip freeze > requirements.txt
     ```
+
+## _2. Cloud Server Instance_
+&emsp;&emsp; Many Cloud hosting servers like GCP, Azure and AWS are available. And we are going to deploy our project in AWS EC2 instance.
+
+&emsp;&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Create a micro or small EC2 instance based on the server requirements. And we are going to use ubuntu virtual OS.
+
+&emsp;&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> After selecting the apt server requirements. Launch the instance. 
+
+&emsp;&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> The next step would be Generating a key-value pair (.ppk) file for instance or use the existing key-value pair. In both case download and secure the key-value pair for future use.
+
+&emsp;&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Once the Instance gets created. It would be listed in the available instances. Once the Instance starts running we can continue the further installations.
