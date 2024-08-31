@@ -47,3 +47,14 @@ Deploying make sure you have done the following things.
 &emsp;&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> The next step would be Generating a key-value pair (.ppk) file for instance or use the existing key-value pair. In both case download and secure the key-value pair for future use.
 
 &emsp;&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Once the Instance gets created. It would be listed in the available instances. Once the Instance starts running we can continue the further installations.
+
+## _3. Send Files to Server Using Filezilla_
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> I'm using Filezilla Software for file transfering to server.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Open Filezilla click file select Site Manager create new site  select SSH File Transfer Protocol, Host add your instance Public IPv4 address, Username ubuntu(whatever), Logon Type select keyfile and connect the server.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> This will open two file locations Local Site and Remote Site.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Local Site is our project Localy running destination so we have to upload whole files to Remote Site.
+
