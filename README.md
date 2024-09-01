@@ -56,10 +56,52 @@ Deploying make sure you have done the following things.
 
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> This will open two file locations Local Site and Remote Site.
 
-&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Local Site is our project Localy running destination so we have to upload whole files to Remote Site.
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Local Site is our project Localy running destination so we have to upload whole files in to ``` /home/ubuntu/ ``` path in Remote Site.
 
 ## _4. Server Dependencies installation_
 
-&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Open Putty Configuration and select SSH, Auth Select the .ppk file, then select Session add  Hostname ``` ubuntu@Publc DNS ```  , Create new session save the session and open.
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Open Putty Configuration and select SSH, Auth Select the .ppk file, then select Session add  Hostname ``` ubuntu@PublcDNS ```  , Create new session save the session and open.
 
-&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Make sure  ``` ls ``` to list the directory.
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Make sure  ``` ls ``` to list the files directory.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Get the ubuntu updates
+
+```bash
+$ sudo apt-get update
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Install the updates
+
+```bash
+$ sudo apt-get upgrade -y
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Install python virtual environment
+
+```bash
+$ sudo apt-get install python3-venv
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Create New Virtual Environment ```env```
+
+```bash
+$ python3 -m venv env
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Activate the virtual environment
+
+```bash
+$ source env/bin/activate
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Install python and postgres requirements
+
+```bash
+$ sudo apt install python3-pip python3-dev libpq-dev postgrsql postgresql-contrib curl
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Upgrade python pip module
+
+```bash
+$ sudo -H pip3 install --upgrade pip
+```
