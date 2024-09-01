@@ -97,11 +97,55 @@ $ source env/bin/activate
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Install python and postgres requirements
 
 ```bash
-$ sudo apt install python3-pip python3-dev libpq-dev postgrsql postgresql-contrib curl
+$ sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib nginx curl
 ```
-
-&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Upgrade python pip module
+## _5. Postgres Installation and Configurations_
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> We have already installed postgresql and its dependencies. Lets start the configurations. open the postgres CLI
 
 ```bash
-$ sudo -H pip3 install --upgrade pip
+$ sudo -u postgres psql
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Create database ```shop_db```
+
+```bash
+$ CREATE DATABASE shop_db;
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Create postgres user with username as ```django``` and password as ```password```
+
+```bash
+$ CREATE USER django WITH PASSWORD 'password';
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Set database encoding 
+
+```bash
+$ ALTER ROLE django SET client_encoding TO 'utf8';
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Set role 
+
+```bash
+$ ALTER ROLE django SET default_transaction_isolation TO 'read committed';
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Set Timezone 
+
+```bash
+$ ALTER ROLE django timezone TO 'UTC';
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Grant permissions for user ```django``` on the database ```shop_db```. 
+
+```bash
+$ GRANT ALL PREVILAGES ON DATABASE shop_db TO django;
+```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> If you are about to create more than one database just repeat only the first and last step to create database and grant permission to user on that database
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> To close the CLI  
+
+```bash
+$ \q
 ```
