@@ -139,7 +139,7 @@ $ ALTER ROLE django SET timezone TO 'UTC';
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Grant permissions for user ```django``` on the database ```shop_db```. 
 
 ```bash
-$ GRANT ALL PREVILAGES ON DATABASE shop_db TO django;
+$ GRANT ALL PRIVILEGES ON DATABASE shop_db TO django;
 ```
 
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> If you are about to create more than one database just repeat only the first and last step to create database and grant permission to user on that database
