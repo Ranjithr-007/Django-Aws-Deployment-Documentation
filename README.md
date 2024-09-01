@@ -150,7 +150,7 @@ $ GRANT ALL PRIVILEGES ON DATABASE shop_db TO django;
 $ \q
 ```
 
-## _6. Django application Installation _
+## _6. Django application Installation_
 
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Install django
 
