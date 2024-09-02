@@ -356,3 +356,24 @@ $ sudo service nginx  restart
 ```bash
 $ sudo service nginx  status
 ```
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> If you visit the same domain in case you can get ```502``` Bad Gateway. So, We need to change the nginx configuration.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Lets update the nginx configuration.
+```bash
+$ cd /etc/nginx/
+```
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Open ```nginx.conf``` file.
+```bash
+$ sudo nano nginx.conf
+```
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Change  ```user www-data;``` to ```user root;```.
+
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Once againn Test nginx.
+```bash
+$ sudo nginx -t
+```
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Restart nginx.
+```bash
+$ sudo service nginx  restart
+```
