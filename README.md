@@ -298,7 +298,7 @@ $ sudo supervisorctl restart all
 
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Lets configure nginx to read the gunicorn sock file. Go to nginx root directory
 ```bash
-$ cd /etc/nginx/sites-avilable/
+$ cd /etc/nginx/sites-available/
 ```
 
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Create and edit the file ```django.conf```.
