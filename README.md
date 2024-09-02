@@ -369,7 +369,7 @@ $ sudo nano nginx.conf
 ```
 &emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Change  ```user www-data;``` to ```user root;```.
 
-&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Once againn Test nginx.
+&emsp;&emsp;<img src="right-arrow.png" width="12" height="12" style="margin-right:1em; margin-top:1px;"> Once again Test nginx.
 ```bash
 $ sudo nginx -t
 ```
