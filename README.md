@@ -1,4 +1,9 @@
 # Django-Aws-Deployment-Documentation
+&emsp;&emsp; Once all the local developments and testings were completed the next step would be deploying our django project in the server.
+It took me some time to find all reference from various websites. And also while configuring I met into few errors.
+which I resolved after spending some time in it.
+
+&emsp;&emsp; So to make the process simple. I have created a Documentation so that it would help my predecessors to deploy it without any hassles.
 
 ## _1. Deployment-Ready project_
 &emsp;&emsp; First and foremost thing to do is to make our application production ready. Before
@@ -377,3 +382,5 @@ $ sudo nginx -t
 ```bash
 $ sudo service nginx  restart
 ```
+
+<h3 style="text-align:right"> Prepared by <a href="https://github.com/Ranjithr-007" style="color:#ba2532">Ranjith</a></h3>
